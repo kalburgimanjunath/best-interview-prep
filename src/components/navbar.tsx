@@ -5,6 +5,7 @@ export default function Navbar() {
     { id: 1, title: "home", link: "home" },
     { id: 2, title: "products", link: "products" },
     { id: 3, title: "cart", link: "cart" },
+    { id: 4, title: "about us", link: "aboutus" },
   ];
   return (
     <div className="flex bg-pink-200 w-full justify-between ">
