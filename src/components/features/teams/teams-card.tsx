@@ -18,7 +18,9 @@ export default function TeamsCard({ title }) {
   };
   return (
     <>
-      <div className="font-bold p-2 text-2xl text-center">{title}</div>
+      <div className="justify-center items-center font-bold p-2 text-2xl text-center">
+        {title}
+      </div>
       <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
         {items.map(({ id, title }) => (
           <Card

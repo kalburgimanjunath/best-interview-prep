@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import PRODUCTS from "../data/PRODUCTS";
+import Card from "../components/features/banners/cards/card";
 export default function Cart() {
   const cart = useSelector((state) => state.cart);
 
@@ -8,13 +9,16 @@ export default function Cart() {
       return cartitem.id == item.id;
     });
   });
-  console.log(filterCart);
   return (
     <div>
       <h3>Cart</h3>
       {filterCart &&
         filterCart.map((item) => {
-          return <div>{item.title}</div>;
+          return (
+            <div>
+              <Card itemId={item.id} title={item.title} image={item.image} />
+            </div>
+          );
         })}
     </div>
   );

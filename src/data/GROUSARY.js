@@ -1,4 +1,4 @@
-const PRODUCTS = [
+[
   {
     id: 1,
     title: "Organic Whole Wheat Bread",
@@ -97,5 +97,3 @@ const PRODUCTS = [
     image: "https://images.pexels.com/photos/725985/pexels-photo-725985.jpeg",
   },
 ];
-
-export default PRODUCTS;

@@ -14,12 +14,10 @@ export default function ProductList() {
   };
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-      {items.map(({ id, title }) => (
+      {items.map((item) => (
         <Card
-          itemId={id} // NOTE: itemId is required for track items
-          title={title}
-          key={id}
-
+          item={item}
+          type="product"
           //   selected={isItemSelected(id)}
         />
       ))}
