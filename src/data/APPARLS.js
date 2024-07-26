@@ -1,4 +1,4 @@
-const PRODUCTS = [
+[
   {
     id: 1,
     title: "Classic White T-Shirt",
@@ -213,5 +213,3 @@ const PRODUCTS = [
     image: "https://images.pexels.com/photos/3757971/pexels-photo-3757971.jpeg",
   },
 ];
-
-export default PRODUCTS;
