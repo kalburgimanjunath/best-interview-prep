@@ -45,7 +45,7 @@ export default function Sidebar() {
     },
   ];
   return (
-    <div className="border h-full fixed shadow-lg max-w-[300]">
+    <div className="border h-full shadow-lg min-w-['250px']">
       <div>Logo</div>
       {menus &&
         menus.map((item) => {

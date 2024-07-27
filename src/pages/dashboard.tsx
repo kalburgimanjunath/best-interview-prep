@@ -18,7 +18,6 @@ const PostCards = () => {
   useEffect(() => {
     loadData();
   }, []);
-  console.log(posts);
   return (
     <div className="grid grid-cols-1 gap-4">
       {posts &&
@@ -41,7 +40,7 @@ export default function Dashboard() {
   return (
     <div className="grid grid-cols-2">
       <Sidebar />
-      <div>
+      <div className="justify-center">
         <div className="fixed flex border-b-2 w-full items-center justify-between left-10 p-2 ">
           <span className="font-bold capitalize text-2xl">{id}</span>
           <div className="flex">
@@ -54,9 +53,17 @@ export default function Dashboard() {
         </div>
         <div className="w-full m-20 p-5">
           <div className="w-full">
-            <div className="flex bg-gray-300 p-5">
-              <input type="text" className="bg-gray-300" />
-              <button type="button" className="bg-gray-300">
+            <div className="flex bg-gray-300 p-5 justify-between">
+              <textarea
+                type="text"
+                placeholder="Whats in your mind?"
+                className="bg-gray-300 w-full"
+                color="#000000"
+              />
+              <button
+                type="button"
+                className="bg-orange-300 border rounded-lg m-2 p-2"
+              >
                 POST
               </button>
             </div>
