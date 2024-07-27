@@ -45,14 +45,17 @@ export default function Sidebar() {
     },
   ];
   return (
-    <div className="border h-full shadow-lg min-w-['250px']">
+    <div className="border h-full shadow-lg min-w-['100px']">
       <div>Logo</div>
       {menus &&
         menus.map((item) => {
           return (
-            <div>
+            <div className="p-2">
               <Link to={`./${item.link}`}>
-                <FontAwesomeIcon icon={item.icon} />
+                <div className="flex align-center items-center">
+                  <span>{item.title}</span>
+                  <FontAwesomeIcon icon={item.icon} style={{ width: 50 }} />
+                </div>
               </Link>
             </div>
           );
