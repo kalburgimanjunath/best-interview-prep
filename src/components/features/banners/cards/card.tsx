@@ -3,7 +3,6 @@ import { addToCart } from "../../../../store/cartSlice";
 import { Link } from "react-router-dom";
 
 const Card = ({ item, type }) => {
-  console.log(item);
   const dispatch = useDispatch();
   const DEFAULT_IMAGE =
     "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg";
