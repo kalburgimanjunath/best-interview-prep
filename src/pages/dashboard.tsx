@@ -36,19 +36,19 @@ const PostCards = () => {
 export default function Dashboard() {
   const { id } = useParams();
 
-  const items = [{ id: 1, title: "tesxt", description: "", image: "" }];
+  const items = [{ id: 1, title: "test", description: "", image: "" }];
   return (
-    <div className="grid grid-cols-2">
+    <div className="flex">
       <Sidebar />
       <div className="justify-center">
-        <div className="fixed flex border-b-2 w-full items-center justify-between left-10 p-2 ">
+        <div className="fixed bg-white flex shadow-lg w-full items-center justify-between left-30 p-2 ">
           <span className="font-bold capitalize text-2xl">{id}</span>
           <div className="flex">
             <input type="search" className="mr-2 bg-gray-300 rounded-sm" />
             <div className="bg-gray-300 rounded-sm p-2">Dashboard</div>
           </div>
         </div>
-        <div className="w-full m-20 p-5">
+        <div className="m-20 p-5">
           <ProductCrousal items={items} type="" />
         </div>
         <div className="w-full m-20 p-5">
